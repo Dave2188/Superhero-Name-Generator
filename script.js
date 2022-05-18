@@ -22,16 +22,16 @@ const superHeroAttributes = {
             let index = generateRandomNumber(superHeroAttributes[attribute].length);
             switch(attribute) {
                 case 'firstName':
-                    hero.push(this.firstName[index]);
+                    hero.push(superHeroAttributes[attribute][index]);
                     break;
                 case 'secondName':
-                    hero.push(this.secondName[index]);
+                    hero.push(superHeroAttributes[attribute][index]);
                     break;
                 case 'superPower':
-                    hero.push(this.superPower[index]);
+                    hero.push(superHeroAttributes[attribute][index]);
                     break;
                 case 'weakness':
-                    hero.push(this.weakness[index]);
+                    hero.push(superHeroAttributes[attribute][index]);
                     break;            
             };
         };
@@ -43,7 +43,7 @@ const getSuperName = () => {
     console.log(`Your Superhero Name is ${hero[0]} ${hero[1]} with the power of ${hero[2]} and a weakness of ${hero[3]}!`);
 }
 
-getSuperName()
+getSuperName();
 
 
 
